@@ -1,0 +1,104 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F5BF0F;
+  padding: 1.5rem 1.5rem;
+  font-size: 18px;
+  z-index: 1000;
+}
+
+
+.logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 26px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #2D11E9;
+}
+
+.nav-links {
+    padding-right: 50px;
+    gap: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-links a {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #F6F9FE;
+    background-color: #2D11E9;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    height: 35px;
+    width: 100px;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    will-change: transform,opacity;
+    z-index: 0;
+}
+
+.nav-links a:hover {
+  background: #F6F9FE;
+  color: #2D11E9;
+  transform: translateY(-3px);
+}
+
+.nav-links a:active {
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+  outline: none;
+}
+
+.nav-links a:focus {
+  outline: none;
+  border: 2px solid #4285f4;
+}
+
+.nav-links a:not(:disabled) {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.nav-links a:not(:disabled):hover {
+  box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+}
+
+.nav-links a:not(:disabled):focus {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.nav-links a:not(:disabled):active {
+  box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+}
+
+.nav-links a:disabled {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+@media (max-width: 900px) {
+  .header {
+    gap: 60px;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+  .nav-links a {
+    width: 86px;
+    font-size: 15px;
+  }
+  .logo a {
+    font-size: 23px;
+  }
+} 

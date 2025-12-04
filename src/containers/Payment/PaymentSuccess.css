@@ -1,0 +1,23 @@
+.payment-success {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.payment-success h2 {
+  font-size: 2rem;
+  color: #2D11E9;
+}
+
+.payment-success .btn {
+  margin-top: 25px;
+  padding: 8px 10px;
+  background: #F5BF0F;
+  color: #000;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.payment-success .btn:hover {
+  background: #2D11E9;
+  color: #fff
+}

@@ -1,0 +1,29 @@
+.footer {
+    background-color: #222;
+    color: #f8f8f8;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+.customer-engagment img {
+    height: 55px;
+    width: 55px;
+    margin: 0px 15px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.customer-engagment img:hover {
+    transform: translateY(-3px);
+}
+
+.utility-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.utility-links p {
+    cursor: pointer;
+}
