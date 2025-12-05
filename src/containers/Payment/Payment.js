@@ -190,7 +190,7 @@ const Payment = () => {
           <ul>
             {cart.map((item) => (
               <li key={item.id}>
-                {item.title} * {item.quantity}
+                {item.hotelName} - {item.name} * {item.quantity}
                 <span>${(item.price * item.quantity).toFixed(2)}</span>
               </li>
             ))}
