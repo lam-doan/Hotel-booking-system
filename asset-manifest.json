@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Hotel-booking-system/static/css/main.242a82d0.css",
-    "main.js": "/Hotel-booking-system/static/js/main.7b7488f4.js",
+    "main.js": "/Hotel-booking-system/static/js/main.32ea4f35.js",
     "static/js/453.27dfea10.chunk.js": "/Hotel-booking-system/static/js/453.27dfea10.chunk.js",
     "static/media/ha-long-bay.png": "/Hotel-booking-system/static/media/ha-long-bay.70ec2889d54cb8c50758.png",
     "index.html": "/Hotel-booking-system/index.html",
     "main.242a82d0.css.map": "/Hotel-booking-system/static/css/main.242a82d0.css.map",
-    "main.7b7488f4.js.map": "/Hotel-booking-system/static/js/main.7b7488f4.js.map",
+    "main.32ea4f35.js.map": "/Hotel-booking-system/static/js/main.32ea4f35.js.map",
     "453.27dfea10.chunk.js.map": "/Hotel-booking-system/static/js/453.27dfea10.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.242a82d0.css",
-    "static/js/main.7b7488f4.js"
+    "static/js/main.32ea4f35.js"
   ]
 }
