@@ -25,6 +25,7 @@ const Home = () => {
   const [hotels, setHotels] = useState([]);
   const [loading, setLoading] = useState(false);
   const [searched, setSearched] = useState(false);
+  const [sortOption, setSortOption] = useState("sort-by");
   const [recentSearches, setRecentSearches] = useState(() => {
     try {
       const stored = typeof localStorage !== 'undefined' ? localStorage.getItem('recentSearches') : null;
@@ -164,6 +165,20 @@ const Home = () => {
     }
   };
 
+  const sortedHotels = [...hotels].sort((hotelA, hotelB) => {
+    const priceA = hotelA.price ? Number(hotelA.price) : Infinity;
+    const priceB = hotelB.price ? Number(hotelB.price) : Infinity;
+    const ratingA = hotelA.rating ? Number(hotelA.rating) : -Infinity;
+    const ratingB = hotelB.rating ? Number(hotelB.rating) : -Infinity;
+
+    if (sortOption === 'asc-by-price') return priceA - priceB;
+    if (sortOption === 'desc-by-price') return priceB - priceA;
+    if (sortOption === 'asc-by-rating') return ratingA - ratingB;
+    if (sortOption === 'desc-by-rating') return ratingB - ratingA;
+  return 0;
+  });
+
+
   return (
     <div className="home">
       <div className="parralax">
@@ -233,6 +248,17 @@ const Home = () => {
           <p>No recent searches</p>
         )}
       </div>
+      
+      {/* filter search results */}
+      <div className='filter-search'>
+        <select onChange={(e) => setSortOption(e.target.value)}>
+          <option value='sort-by'>Sort by</option>
+          <option value='asc-by-price'>Price: Low to High</option>
+          <option value='desc-by-price'>Price: High to Low</option>
+          <option value='asc-by-rating'>Rating: Low to High</option>
+          <option value='desc-by-rating'>Rating: High to Low</option>
+        </select>
+      </div>
 
       <div className="hotel-list">
         {loading ? (
@@ -240,7 +266,7 @@ const Home = () => {
         ) : searched && hotels.length === 0 ? (
           <p>No hotels found</p>
         ) : (
-          hotels.map((hotel, index) => (
+          sortedHotels.map((hotel, index) => (
             <HotelCard
               key={index}
               hotel={hotel}

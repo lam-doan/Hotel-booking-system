@@ -4,9 +4,10 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="customer-engagment">
-                <img src="/email-icon.png" alt="email-icon"/>
-                <img src="/insta-icon.png" alt="email-icon"/>
-                <img src="/facebook-icon.png" alt="email-icon"/>
+                <img src={process.env.PUBLIC_URL + '/email-icon.png'} alt="email-icon"/>
+                <img src={process.env.PUBLIC_URL + '/insta-icon.png'} alt="insta-icon"/>
+                <img src={process.env.PUBLIC_URL + '/facebook-icon.png'} alt="facebook-icon"/>
+
             </div>
             <div className="utility-links">
                 <p>Info</p>
