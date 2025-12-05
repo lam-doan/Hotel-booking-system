@@ -2,8 +2,6 @@ import './Home.css';
 import { useState, useEffect } from 'react';
 import HotelCard from '../../components/HotelCard/HotelCard.js';
 
-const api_key = "sand_97a1f77d-488e-4b82-945f-d60e20f43621";
-
 function extractPrice(rateData) {
   const hotel = rateData?.data?.[0];
   if (!hotel) return null;
