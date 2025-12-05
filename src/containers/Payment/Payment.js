@@ -77,7 +77,7 @@ const Payment = () => {
 
       <div className="payment-container">
         <div className="form-section">
-          <h3>Shipping Address</h3>
+          <h3>Personal Information</h3>
 
           <div className="form-group">
             <label>Full Name</label>

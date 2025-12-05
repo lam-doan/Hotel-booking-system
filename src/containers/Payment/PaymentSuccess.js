@@ -6,7 +6,7 @@ const PaymentSuccess = () => {
   return (
     <div className="payment-success">
       <h2>Payment Successful!</h2>
-      <p>Your order has been placed.</p>
+      <p>Your room has been booked successfully.</p>
       <Link to="/" className="btn">Return to Home</Link>
     </div>
   );
