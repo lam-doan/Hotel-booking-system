@@ -105,10 +105,18 @@ h3 {
 .summary-section li {
   display: flex;
   justify-content: space-between;
+  align-items: center;   /* vertically align text and price */
   margin-bottom: 12px;
+  gap: 20px;             /* add horizontal spacing between name and price */
 }
 
-.summary-section li span { color: #0f172a; font-weight: 700; }
+.summary-section li span {
+  color: #0f172a;
+  font-weight: 700;
+  margin-left: auto;     /* push price all the way to the right */
+  text-align: right;     /* align price text to the right */
+  min-width: 80px;       /* reserve space so it doesn’t crowd the name */
+}
 
 .summary-section .total { display:flex; justify-content:space-between; align-items:center; margin-top:12px; padding-top:12px; border-top:1px solid #f1f5f9; }
 
