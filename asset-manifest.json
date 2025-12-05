@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/hotel-booking-system/static/css/main.4b3aff1c.css",
+    "main.js": "/hotel-booking-system/static/js/main.35d42ff3.js",
+    "static/js/453.27dfea10.chunk.js": "/hotel-booking-system/static/js/453.27dfea10.chunk.js",
+    "static/media/ha-long-bay.png": "/hotel-booking-system/static/media/ha-long-bay.70ec2889d54cb8c50758.png",
+    "index.html": "/hotel-booking-system/index.html",
+    "main.4b3aff1c.css.map": "/hotel-booking-system/static/css/main.4b3aff1c.css.map",
+    "main.35d42ff3.js.map": "/hotel-booking-system/static/js/main.35d42ff3.js.map",
+    "453.27dfea10.chunk.js.map": "/hotel-booking-system/static/js/453.27dfea10.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4b3aff1c.css",
+    "static/js/main.35d42ff3.js"
+  ]
+}
